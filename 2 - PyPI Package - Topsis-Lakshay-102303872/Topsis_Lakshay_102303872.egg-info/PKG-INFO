@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: Topsis-Lakshay-102303872
+Version: 0.0.1
+Summary: TOPSIS CLI tool for multi-criteria decision making
+Author-email: Lakshay <lsawhney07@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis-Lakshay-102303872
+
+A Python package that implements **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** as a command-line tool.
+
+---
+
+## Installation
+
+Install the package from PyPI using pip:
+
+```bash
+pip install Topsis-Lakshay-102303872
+```
+
+---
+
+## Command Line Usage
+
+After installation, the TOPSIS program can be executed using the `topsis` command.
+
+```bash
+topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
+```
+
+---
+
+## Example
+
+```bash
+topsis data.csv "1,1,1,2,1" "+,+,-,+,-" result.csv
+```
+
+---
+
+## Input File Format
+
+The input file must be a CSV file with:
+- First column containing alternative names (non-numeric)
+- Remaining columns containing numeric criteria values
+
+Example `data.csv`:
+```csv
+Fund Name,P1,P2,P3,P4,P5
+M1,0.67,0.45,6.5,42.6,12.56
+M2,0.60,0.36,3.5,53.3,14.47
+M3,0.82,0.67,3.8,63.1,17.10
+```
+
+---
+
+## Output File Format
+
+The output CSV file contains all original columns along with:
+- **Topsis Score**
+- **Rank**
+
+A higher Topsis Score indicates a better alternative.
+
+---
+
+## Validations Performed
+
+- Correct number of command-line arguments
+- Input file existence check
+- Minimum of three columns in input file
+- Numeric values in criteria columns
+- Number of weights equals number of criteria
+- Number of impacts equals number of criteria
+- Impacts must be either `+` or `-`
+
+---
+
+## Author
+
+Lakshay  
+Roll Number: 102303872
+
+---
+
+## License
+
+MIT License

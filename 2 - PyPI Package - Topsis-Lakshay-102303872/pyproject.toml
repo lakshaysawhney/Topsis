@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Topsis-Lakshay-102303872"
+version = "0.0.1"
+description = "TOPSIS CLI tool for multi-criteria decision making"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "Lakshay", email = "lsawhney07@gmail.com"}
+]
+license = {text = "MIT"}
+dependencies = ["pandas", "numpy"]
+
+[tool.setuptools]
+packages = ["topsis_lakshay_102303872"]
+
+[project.scripts]
+topsis = "topsis_lakshay_102303872.topsis:main"
