@@ -4,7 +4,7 @@
 The objective of this assignment is to implement the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** algorithm and deploy it as:
 1. A command-line Python program  
 2. A Python package uploaded to PyPI  
-3. A web service  
+3. A deployed web service  
 
 ---
 
@@ -77,9 +77,14 @@ pip install Topsis-Lakshay-102303872
 topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
 ```
 
+### PyPI Link
+```text
+https://pypi.org/project/Topsis-Lakshay-102303872/
+```
+
 ---
 
-## Part III: Web Service
+## Part III: Web Service (Deployed)
 
 A web service interface is implemented to:
 - Upload input CSV file
@@ -87,6 +92,20 @@ A web service interface is implemented to:
 - Provide an email address
 - Compute TOPSIS ranking
 - Send the result CSV to the provided email
+
+### Deployed Web Service Link (Render)
+```text
+https://topsis-55xo.onrender.com/
+```
+
+### Tech Stack
+- Python
+- Flask
+- Gunicorn
+- HTML
+- SMTP (Gmail) for email delivery
+- Render (Cloud deployment)
+- PyPI package dependency: `Topsis-Lakshay-102303872`
 
 ---
 
