@@ -1,0 +1,4 @@
+Flask==3.1.2
+gunicorn==22.0.0
+Werkzeug==3.1.5
+Topsis-Lakshay-102303872==0.0.1
